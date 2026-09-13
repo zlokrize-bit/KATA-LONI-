@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_bg"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/accent"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Server settings -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_server"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:id="@+id/editServerIp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_server_ip"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/white"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editServerPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_server_port"
+        android:text="443"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Games list -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_games"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="6dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerGames"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Permission + control buttons -->
+    <Button
+        android:id="@+id/btnGrantOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_grant_overlay"
+        android:layout_marginBottom="6dp" />
+
+    <Button
+        android:id="@+id/btnGrantUsage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_grant_usage"
+        android:layout_marginBottom="6dp" />
+
+    <Button
+        android:id="@+id/btnToggleService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_start_service"
+        android:backgroundTint="@color/accent"
+        android:layout_marginBottom="6dp" />
+
+    <Button
+        android:id="@+id/btnOpenV2rayTun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_open_v2raytun"
+        android:backgroundTint="#FF1A1A1A"
+        android:textColor="@color/accent" />
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/status_stopped"
+        android:textColor="@color/gray" />
+
+</LinearLayout>

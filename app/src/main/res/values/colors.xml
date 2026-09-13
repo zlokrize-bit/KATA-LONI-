@@ -1,0 +1,10 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="dark_bg">#FF0D0D0D</color>
+    <color name="accent">#FF00E5FF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#FF9E9E9E</color>
+    <color name="ping_good">#FF00E676</color>
+    <color name="ping_mid">#FFFFC107</color>
+    <color name="ping_bad">#FFFF5252</color>
+</resources>

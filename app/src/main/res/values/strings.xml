@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">KATA LONI</string>
+    <string name="title_games">اختر الألعاب</string>
+    <string name="title_server">إعدادات السيرفر</string>
+    <string name="hint_server_ip">عنوان السيرفر (IP)</string>
+    <string name="hint_server_port">المنفذ (Port)</string>
+    <string name="btn_grant_overlay">1. اسمح بالعرض فوق التطبيقات</string>
+    <string name="btn_grant_usage">2. اسمح بالوصول لبيانات الاستخدام</string>
+    <string name="btn_start_service">3. تشغيل البانل</string>
+    <string name="btn_stop_service">إيقاف البانل</string>
+    <string name="status_stopped">متوقف</string>
+    <string name="status_running">شغال ✅</string>
+    <string name="btn_open_v2raytun">🔗 فتح v2RayTun</string>
+</resources>
